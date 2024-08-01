@@ -1,21 +1,9 @@
-.color-HTML{
-    color: $color-HTML;
-}
-.color-JavaScript{
-    color: $color-js;
-}
-.color-CSS{
-    color: $color-css;
-}
-.color-Vue{
-    color: $color-vue;
-}
-.color-Bootstrap{
-    color: $color-bootstrap;
-}
-.color-Sass{
-    color: $color-sass;
-}
-.color-Git{
-    color: $color-git;
+$technology: "HTML", "JavaScript", "CSS", "Vue", "Bootstrap", "Sass", "Git";
+$color: $color-HTML, $color-js, $color-css, $color-vue, $color-bootstrap, 
+$color-sass, $color-git;
+
+@each $tech, $col in zip($technology, $color){
+    .color-#{$tech}{
+        color: $col;
+    }
 }
