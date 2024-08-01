@@ -1,5 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 //Layout.
-@import "./layout/header";
-@import "./layout/projects";
+@import "layout/header";
+@import "layout/projects";
+@import "layout/skills";
+@import "layout/contact";
+
+//Components.
+@import "components/navbar";
